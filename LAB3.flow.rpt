@@ -1,6 +1,6 @@
 Flow report for LAB3
-Tue Nov 05 18:21:02 2013
-Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+Wed Oct 12 13:59:58 2016
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -13,13 +13,15 @@ Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
   5. Flow Elapsed Time
   6. Flow OS Summary
   7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2009 Altera Corporation
+Copyright (C) 1991-2013 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -35,20 +37,26 @@ applicable agreement for further details.
 
 
 
-+------------------------------------------------------------------------+
-; Flow Summary                                                           ;
-+-------------------------+----------------------------------------------+
-; Flow Status             ; Successful - Tue Nov 05 18:21:02 2013        ;
-; Quartus II Version      ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
-; Revision Name           ; LAB3                                         ;
-; Top-level Entity Name   ; Lab3top                                      ;
-; Family                  ; MAX7000S                                     ;
-; Device                  ; EPM7128SLC84-7                               ;
-; Timing Models           ; Final                                        ;
-; Met timing requirements ; Yes                                          ;
-; Total macrocells        ; 57 / 128 ( 45 % )                            ;
-; Total pins              ; 26 / 68 ( 38 % )                             ;
-+-------------------------+----------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Flow Summary                                                                         ;
++------------------------------------+-------------------------------------------------+
+; Flow Status                        ; Successful - Wed Oct 12 13:59:48 2016           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; LAB3                                            ;
+; Top-level Entity Name              ; Lab3top                                         ;
+; Family                             ; Cyclone IV E                                    ;
+; Device                             ; EP4CE115F29C7                                   ;
+; Timing Models                      ; Final                                           ;
+; Total logic elements               ; 46 / 114,480 ( < 1 % )                          ;
+;     Total combinational functions  ; 43 / 114,480 ( < 1 % )                          ;
+;     Dedicated logic registers      ; 16 / 114,480 ( < 1 % )                          ;
+; Total registers                    ; 16                                              ;
+; Total pins                         ; 22 / 529 ( 4 % )                                ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                           ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                                 ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
++------------------------------------+-------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -56,68 +64,71 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/05/2013 18:20:56 ;
+; Start date & time ; 10/12/2016 13:59:09 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; LAB3                ;
 +-------------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                   ;
-+------------------------------------+--------------------------------+---------------+-------------+----------------+
-; Assignment Name                    ; Value                          ; Default Value ; Entity Name ; Section Id     ;
-+------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 19883241008100.138369365606512 ; --            ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_MUX                        ; --            ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_MUX                        ; --            ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_MUX                        ; --            ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_MUX                        ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.0                            ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.0                            ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.0                            ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.0                            ; --            ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP             ; 85                             ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP             ; 0                              ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux0.tdf                   ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux0.bsf                   ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux0.inc                   ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux1.tdf                   ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux1.bsf                   ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux1.inc                   ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux2.tdf                   ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux2.bsf                   ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux2.inc                   ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux3.tdf                   ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux3.bsf                   ; --            ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux3.inc                   ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                   ; Lab3top                        ; LAB3          ; --          ; --             ;
-; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                            ; --            ; --          ; eda_blast_fpga ;
-+------------------------------------+--------------------------------+---------------+-------------+----------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                     ;
++-------------------------------------+---------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+---------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 109952946398564.147629514904968 ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 9.0                             ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_mux0.tdf                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_mux0.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_mux0.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_mux1.tdf                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_mux1.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_mux1.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_mux2.tdf                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_mux2.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_mux2.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_mux3.tdf                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_mux3.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_mux3.inc                    ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                        ; --            ; Lab3top     ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; Lab3top     ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; Lab3top     ; Top            ;
+; TOP_LEVEL_ENTITY                    ; Lab3top                         ; LAB3          ; --          ; --             ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS  ; Off                             ; --            ; --          ; eda_blast_fpga ;
++-------------------------------------+---------------------------------+---------------+-------------+----------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                           ;
-+-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:02     ; 1.0                     ; 207 MB              ; 00:00:02                           ;
-; Fitter                  ; 00:00:01     ; 1.0                     ; 168 MB              ; 00:00:01                           ;
-; Assembler               ; 00:00:00     ; 1.0                     ; 178 MB              ; 00:00:00                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 153 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:03     ; --                      ; --                  ; 00:00:03                           ;
-+-------------------------+--------------+-------------------------+---------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:05     ; 1.0                     ; 481 MB              ; 00:00:03                           ;
+; Fitter                    ; 00:00:18     ; 1.0                     ; 1035 MB             ; 00:00:17                           ;
+; Assembler                 ; 00:00:07     ; 1.0                     ; 446 MB              ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 551 MB              ; 00:00:05                           ;
+; Total                     ; 00:00:39     ; --                      ; --                  ; 00:00:30                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                          ;
-+-------------------------+------------------+---------------+------------+----------------+
-; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
-+-------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis    ; KLEFTO-W500      ; Windows Vista ; 6.1        ; x86_64         ;
-; Fitter                  ; KLEFTO-W500      ; Windows Vista ; 6.1        ; x86_64         ;
-; Assembler               ; KLEFTO-W500      ; Windows Vista ; 6.1        ; x86_64         ;
-; Classic Timing Analyzer ; KLEFTO-W500      ; Windows Vista ; 6.1        ; x86_64         ;
-+-------------------------+------------------+---------------+------------+----------------+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; 1850-B302S020    ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; 1850-B302S020    ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; 1850-B302S020    ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; 1850-B302S020    ; Windows 7 ; 6.1        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
 
 
 ------------
@@ -126,7 +137,7 @@ applicable agreement for further details.
 quartus_map --read_settings_files=on --write_settings_files=off LAB3 -c LAB3
 quartus_fit --read_settings_files=off --write_settings_files=off LAB3 -c LAB3
 quartus_asm --read_settings_files=off --write_settings_files=off LAB3 -c LAB3
-quartus_tan --read_settings_files=off --write_settings_files=off LAB3 -c LAB3
+quartus_sta LAB3 -c LAB3
 
 
 

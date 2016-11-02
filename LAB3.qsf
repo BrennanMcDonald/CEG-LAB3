@@ -36,12 +36,12 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY MAX7000S
-set_global_assignment -name DEVICE "EPM7128SLC84-7"
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
 set_global_assignment -name TOP_LEVEL_ENTITY Lab3top
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.0 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:26:31  OCTOBER 08, 2013"
-set_global_assignment -name LAST_QUARTUS_VERSION "9.0 SP2"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -80,5 +80,35 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE LAB3sim3.vwf
 set_global_assignment -name BDF_FILE lab42a.bdf
 set_global_assignment -name BDF_FILE FullAdder4bits.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE LAB34BitsFullAdder.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE LAB3sim6.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE LAB3sim.vwf
+set_global_assignment -name MAX7000_DEVICE_IO_STANDARD TTL
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_AB28 -to A0
+set_location_assignment PIN_AC28 -to A1
+set_location_assignment PIN_AC27 -to A2
+set_location_assignment PIN_AD27 -to A3
+set_location_assignment PIN_AB27 -to B0
+set_location_assignment PIN_AC26 -to B1
+set_location_assignment PIN_AD26 -to B2
+set_location_assignment PIN_AB26 -to B3
+set_location_assignment PIN_G19 -to C0
+set_location_assignment PIN_F19 -to C1
+set_location_assignment PIN_E19 -to C2
+set_location_assignment PIN_F21 -to C3
+set_location_assignment PIN_Y2 -to Clk
+set_location_assignment PIN_AA24 -to CLRN
+set_location_assignment PIN_E21 -to Cy
+set_location_assignment PIN_E22 -to S
+set_location_assignment PIN_AA23 -to S0
+set_location_assignment PIN_AA22 -to S1
+set_location_assignment PIN_Y24 -to S2
+set_location_assignment PIN_Y23 -to S3
+set_location_assignment PIN_E24 -to V
+set_location_assignment PIN_E25 -to Z
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "Z:/BMCDO020/CEG-LAB3/Waveform.vwf"
